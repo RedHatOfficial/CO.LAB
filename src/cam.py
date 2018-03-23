@@ -587,6 +587,8 @@ atexit.register(camera.close)
 camera.resolution = sizeData[sizeMode][1]
 #camera.crop       = sizeData[sizeMode][2]
 camera.crop       = (0.0, 0.0, 1.0, 1.0)
+# rotate camera to match the alignment we need
+camera.rotation   = 270
 # Leave raw format at default YUV, don't touch, don't set to RGB!
 
 # Load all icons at startup.
