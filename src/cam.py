@@ -1,3 +1,7 @@
+# Hacked by Tom Callaway <spot@redhat.com> on Jan 8 2018 to:
+# Fix the storeMode check to upload to dropbox (looks for 2, should be 3)
+# Change the Dropbox target to HP Print (not Photos)
+
 # Point-and-shoot camera for Raspberry Pi w/camera and Adafruit PiTFT.
 # This must run as root (sudo python cam.py) due to framebuffer, etc.
 #
@@ -216,7 +220,7 @@ def sizeModeCallback(n): # Radio buttons on size settings screen
 screenMode      =  3      # Current screen mode; default = viewfinder
 screenModePrior = -1      # Prior screen mode (for detecting changes)
 settingMode     =  4      # Last-used settings mode (default = storage)
-storeMode       =  0      # Storage mode; default = Photos folder
+storeMode       =  2      # Storage mode; default = Photos folder
 storeModePrior  = -1      # Prior storage mode (for detecting changes)
 sizeMode        =  0      # Image size; default = Large
 fxMode          =  0      # Image effect; default = Normal
@@ -257,9 +261,10 @@ fxData = [
   'washedout', 'emboss', 'cartoon', 'solarize' ]
 
 pathData = [
-  '/home/pi/Photos',     # Path for storeMode = 0 (Photos folder)
-  '/boot/DCIM/CANON999', # Path for storeMode = 1 (Boot partition)
-  '/home/pi/Photos']     # Path for storeMode = 2 (Dropbox)
+  '/media/pi/drive',     # Path for storeMode = 0 (thumb drive)
+  '/media/pi/drive',     # Path for storeMode = 1 (thumb drive)
+  '/media/pi/drive',     # Path for storeMode = 2 (thumb drive)
+  '/home/pi/Photos']     # Path for storeMode = 3 (photos folder)
 
 icons = [] # This list gets populated at startup
 
@@ -436,6 +441,9 @@ def spinner():
 def takePicture():
 	global busy, gid, loadIdx, saveIdx, scaled, sizeMode, storeMode, storeModePrior, uid
 
+	if not os.path.ismount(pathData[storeMode]):
+		storeMode = 3
+
 	if not os.path.isdir(pathData[storeMode]):
 	  try:
 	    os.makedirs(pathData[storeMode])
@@ -483,12 +491,17 @@ def takePicture():
 	    stat.S_IRUSR | stat.S_IWUSR | stat.S_IRGRP | stat.S_IROTH)
 	  img    = pygame.image.load(filename)
 	  scaled = pygame.transform.scale(img, sizeData[sizeMode][1])
-	  if storeMode == 2: # Dropbox
+	  if storeMode == 3: # Dropbox
+            # print "Dropbox enabled"
 	    if upconfig:
-	      cmd = uploader + ' -f ' + upconfig + ' upload ' + filename + ' Photos/' + os.path.basename(filename)
-	    else:
-	      cmd = uploader + ' upload ' + filename + ' Photos/' + os.path.basename(filename)
-	    call ([cmd], shell=True)
+              cmd = uploader + ' -f ' + upconfig + ' upload ' + filename + ' "HP Print/"' + os.path.basename(filename)
+            else:
+              cmd = uploader + ' upload ' + filename + ' HP Print/' + os.path.basename(filename)
+            print cmd
+            call ([cmd], shell=True)
+          else:
+            # print storeMode
+            # print "Dropbox disabled!"
 
 	finally:
 	  # Add error handling/indicator (disk full, etc.)
