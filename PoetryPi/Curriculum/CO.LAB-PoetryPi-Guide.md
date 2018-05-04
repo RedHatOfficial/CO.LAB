@@ -75,7 +75,7 @@ Raspberry Pi and that it is installed with the Pi-Top OS.
     > need to do this first because the Raspberry Pi will sit inside of
     > the CEED monitor so you will not be able to move the Pi around
     > when your monitor is on.![Attach camera
-    > board.jpg](media/media/image9.jpg)
+    > board.jpg](media/image9.jpg)
 
 2.  > Follow the instructions inside the Pi-Top box to set up the
     > monitor, inserting the Raspberry Pi within it.
@@ -102,7 +102,7 @@ Assemble Camera
     1.  > Remove the little piece of green protective film covering the
         > camera ribbon slot. Attach the camera board to the Raspberry
         > Pi (pinch into place). ![Attach camera
-        > board.jpg](media/media/image7.jpg)
+        > board.jpg](media/image7.jpg)
     
     2.  > Attach the TFT touchscreen onto the GPIO pins
     
@@ -127,7 +127,7 @@ time with the kids.\]**
         > configuration settings through the Terminal. To access the
         > Terminal, open your Pi-Top Dashboard and scroll to the bottom
         > of the Quick Launch icons.![IMG\_1348
-        > (1).JPG](media/media/image12.jpg)
+        > (1).JPG](media/image12.jpg)
     
     2.  > In the Terminal, type “sudo raspi-config” and press Enter.
     
@@ -136,7 +136,7 @@ time with the kids.\]**
         > Enter. When it asks you if you want the camera enabled, use
         > your keyboard arrows to move to “Yes” and press Enter again.
     
-    4.  > ![configuration tool.png](media/media/image14.png)
+    4.  > ![configuration tool.png](media/image14.png)
     
     5.  > You will need to reboot your Pi-Top CEED after this.
 
@@ -157,7 +157,7 @@ time with the kids.\]**
     3.  > NOTE: CTRL + D should stop the live feed if you get stuck in
         > it (this tends to happen, don’t worry).
 
-> ![Creating Camera.Py.png](media/media/image4.png)
+> ![Creating Camera.Py.png](media/image4.png)
 
 3.  > Now that we have taken a 10 second live feed, let’s take a
     > picture\!
@@ -169,7 +169,7 @@ time with the kids.\]**
         > capture the photo, and you need to name your photo and give it
         > a file path on your Desktop. Add this:
 
-> ![Take a photo.png](media/media/image5.png)
+> ![Take a photo.png](media/image5.png)
 
 2.  > The photo that you took was saved to your Desktop. You can take
     > more pictures using this script and changing ‘/image.jpg’ to a new
@@ -192,7 +192,7 @@ time with the kids.\]**
     2.  > The “filename” is where your photos will be stored. So we will
         > modify this in the next step.
     
-    3.  > ![FullSizeRender.jpg](media/media/image10.jpg)
+    3.  > ![FullSizeRender.jpg](media/image10.jpg)
 
 5.  > Now that we can generate a new file name each time we take a
     > picture, we are going to have a lot of pictures. So let’s create a
