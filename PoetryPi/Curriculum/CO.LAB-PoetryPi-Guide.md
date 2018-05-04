@@ -1,188 +1,120 @@
-**CO.LAB **
+**CO.LAB**
 
-**RASPBERRY PI TUTORIAL**
+**Empowered by Red Hat**
 
-**\*\*Draft\*\***
+The goal of CO.LAB is to introduce young people to the principles of
+open source -- and to a world of technology and collaboration that they
+may not have otherwise considered. Collaboration is a powerful driver of
+innovation and discovery, and open source methodology is a key part of
+STEAM (science, technology, engineering, arts, and mathematics)
+education. Empower your young people with collaborative skills that will
+help them succeed in their pursuit of science, technology, engineering
+and math careers.
 
-Additional
-resources
+**WHAT YOU’LL
+NEED**
 
-[<span class="underline">http://makezine.com/projects/raspberry-pi-point-and-shoot-camera/</span>](http://makezine.com/projects/raspberry-pi-point-and-shoot-camera/)
+| **PARTS**                                                       | **MODEL**                                                                              | **QTY** | **EST COST** | **SOURCE**                              |
+| --------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------- | ------------ | --------------------------------------- |
+| PiTop Ceed                                                      |                                                                                        | 1       | $115.00      | Pi-Top                                  |
+| Raspberry Pi                                                    | Pi 3 Model B                                                                           | 1       | $40.00       | Adafruit, Amazon, multiple distributors |
+| Camera board                                                    | Pi Camera board - 8 megapixel V2.1 (product ID 3099)                                   | 1       | $30.00       | Adafruit, Amazon                        |
+| Touchscreen                                                     | Adafruit 2423 capacitive touchscreen - Model B+/Pi2                                    | 1       | $45.00       | Adafruit                                |
+| Battery pack                                                    | Ramoss USB Battery pack - 4000mAh - 5V @1A                                             | 1       | $24.50       | Adafruit                                |
+| Keyboard and Mouse                                              | ProHT USB Optical Mouse/ Keyboard combo (70126)                                        | 1       | $10.39       | Amazon                                  |
+| Micro SD card                                                   | SanDisk 16GB Mobile MicroSDHC Class 4 Flash Memory Card With Adapter- SDSDQM-016G-B35A | 1       | $7.00        | Amazon                                  |
+| **OPTIONAL ITEMS (good to have just in case)**                  |                                                                                        |         |              |
+| Ethernet cables                                                 |                                                                                        |         |              |                                         |
+| HDMI cables                                                     |                                                                                        |         |              |                                         |
+| HDMI-enabled monitors for displaying curriculum on large screen |                                                                                        |         |              |                                         |
+| Surge protectors                                                |                                                                                        |         |              |                                         |
+| Raspberry Pi case                                               |                                                                                        |         |              |                                         |
 
-[<span class="underline">https://www.raspberrypi.org/learning/getting-started-with-picamera/worksheet/</span>](https://www.raspberrypi.org/learning/getting-started-with-picamera/worksheet/)
+THE CURRICULUM: OVERVIEW
 
-Welcome
-packet
+2-3 day event
 
-[<span class="underline">https://docs.google.com/document/d/1wywNEXl\_80StqYa6iqbwt9RYISSMsOTQ5neJOdncPBM/edit</span>](https://docs.google.com/document/d/1wywNEXl_80StqYa6iqbwt9RYISSMsOTQ5neJOdncPBM/edit)
+Broken down into 3 main sections -- Learn. Create. Share.
 
-Do it yourself
-guide
+LEARN
 
-[<span class="underline">https://docs.google.com/document/d/1Ei-lUN3hzNIwjkNxf2xEMIBnevhv9kgCc6tAyXyNV9s/edit</span>](https://docs.google.com/document/d/1Ei-lUN3hzNIwjkNxf2xEMIBnevhv9kgCc6tAyXyNV9s/edit)
+Students are tutored on basic documentary photography and storytelling
+techniques, as well as introduced to the themes of interconnectedness
+and community. After that, they’re taught to build, program and operate
+their Raspberry Pi digital camera kits.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>PARTS</strong></th>
-<th><strong>MODEL</strong></th>
-<th><strong>QTY</strong></th>
-<th><strong>EST COST</strong></th>
-<th><strong>SOURCE</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>PiTop Ceed</td>
-<td></td>
-<td>1</td>
-<td>$115.00</td>
-<td>Pi-Top</td>
-</tr>
-<tr class="even">
-<td>Raspberry Pi</td>
-<td>Pi 3 Model B</td>
-<td>2</td>
-<td>$40.00/each</td>
-<td>Adafruit, Amazon, multiple distributors</td>
-</tr>
-<tr class="odd">
-<td>Camera board</td>
-<td>Pi Camera board - 8 megapixel V2.1 (product ID 3099)</td>
-<td>1</td>
-<td>$30.00</td>
-<td>Adafruit, Amazon</td>
-</tr>
-<tr class="even">
-<td>Touchscreen</td>
-<td>Adafruit 2423 capacitive touchscreen - Model B+/Pi2</td>
-<td>1</td>
-<td>$45.00</td>
-<td>Adafruit</td>
-</tr>
-<tr class="odd">
-<td>Battery pack</td>
-<td>Romoss USB Battery pack - 4000mAh - 5V @1A</td>
-<td>1</td>
-<td>$24.50</td>
-<td>Adafruit</td>
-</tr>
-<tr class="even">
-<td>Keyboard and Mouse</td>
-<td>ProHT USB Optical Mouse/ Keyboard combo (70126)</td>
-<td>1</td>
-<td>$10.39</td>
-<td>Amazon</td>
-</tr>
-<tr class="odd">
-<td>Micro SD card</td>
-<td><h1 id="sandisk-16gb-mobile-microsdhc-class-4-flash-memory-card-with-adapter--sdsdqm-016g-b35a">SanDisk 16GB Mobile MicroSDHC Class 4 Flash Memory Card With Adapter- SDSDQM-016G-B35A</h1></td>
-<td>2</td>
-<td>$7.00/<br />
-each</td>
-<td>Amazon</td>
-</tr>
-<tr class="even">
-<td>Pi case/cover</td>
-<td><h1 id="for-raspberry-pi-model-b">For Raspberry Pi Model B</h1></td>
-<td></td>
-<td></td>
-<td>Adafruit</td>
-</tr>
-</tbody>
-</table>
+\<Basic documentary\>
 
-**Helpful to have on hand:**
+\<Storytelling\>
 
-  - > Ethernet cables
+\<Raspberry Pi build\>
 
-  - > HDMI cables
+CREATE
 
-  - > HDMI enabled monitors for displaying on larger screen
+Day two will bring our students a more specific educational focus on
+artistic flair and Raspberry Pi photography guidelines. Then they’ll
+depart on their journey through Boston neighborhoods – finding
+inspiration, shooting photos, and forming stories.
 
-  - > Surge protectors
+SHARE
 
-  - > Case
+On their last day, all 25 girls will return to City Hall Plaza, where
+they’ll cull and curate the photos they took on day two. This is where
+our student teams will work together to create installations that tell
+the story of their overall experience. They’ll then share, critique, and
+refine — in preparation to bring their project to the public.
 
-  - > Masking tape to hold camera strip
+**DAY ONE: LEARN **
 
-**To do ahead of time**
-
-1.  > Image the SD cards using the following code:
-
-\<ljkljkl\>
-
-CAN WE HOST THIS ONLINE?
-
-2.  > Charge the battery
-pack
-
-### UPDATE BELOW INFORMATION WITH FULL CODING CURIC, OR UPDATE THE ROS DOC WITH THE MATERIALS LIST.
-
-### Set up the Pi-Top CEED
+Set up the Pi-Top CEED
 
 These instructions assume you have your micro SD card inside of your
-Raspberry Pi and that it is installed with the Pi-Top OS (link to
-directions on how to do this, or put it in the outline).
+Raspberry Pi and that it is installed with the Pi-Top OS.
 
-1.  > Attach the camera board to the Raspberry Pi. We need to do this
-    > first because the Raspberry Pi will sit inside of the CEED monitor
-    > so you will not be able to move the Pi around when your monitor is
-    > on.
+1.  > First you need to attach the camera board to the Raspberry Pi. We
+    > need to do this first because the Raspberry Pi will sit inside of
+    > the CEED monitor so you will not be able to move the Pi around
+    > when your monitor is on.![Attach camera
+    > board.jpg](media/media/image9.jpg)
 
 2.  > Follow the instructions inside the Pi-Top box to set up the
-    > monitor, inserting the Raspberry Pi within it. Use the 4 magnets
-    > inside the CEED box to keep the Pi attached inside the CEED.
+    > monitor, inserting the Raspberry Pi within it.
     
     1.  > Attach a keyboard and a mouse to the USB ports on the side of
-        > the Raspberry Pi. These should be accessible from the right
-        > side of the Pi.
-    
-    2.  > Insert the power cord in the back of the CEED.
-    
-    3.  > It’s ok to leave the black sliding front off the CEED since
-        > we’ll insert the SD card back into the Pi after taking
-        > pictures.
+        > the Raspberry Pi. These should be accessible from the side of
+        > the Pi.
 
 3.  > Once you plug the Pi-Top CEED into the wall, press the power
     > button on the left side for 2-3 seconds to power on. A “Get
     > Started” screen will appear.
     
-    4.  > Follow the on-screen instructions, connecting to WiFi when it
+    2.  > Follow the on-screen instructions, connecting to WiFi when it
         > prompts you to do so.
 
 **\[Here: Kids learned about using the Terminal and writing basic
 commands through the command line, and explored the games and activities
-on their CEED.\] \> we should write these out**
+on their CEED.\]**
 
-### Assemble Camera
+Assemble Camera
 
 1.  > Assemble the camera using Card B:
     
     1.  > Remove the little piece of green protective film covering the
         > camera ribbon slot. Attach the camera board to the Raspberry
-        > Pi in the CAMERA slot (pinch into place). The blue strip faces
-        > the USB ports.
-
-> ![Attach camera board.jpg](media/image11.jpg)
-
-2.  > Attach the TFT touchscreen onto the GPIO pins. Pay attention to
-    > not bending the pins.
-
-3.  > Plug into battery pack.
-
-4.  > The PI camera should power on if Card B was formatted properly.
-
-5.  > Tape the camera strip to the case to hold the lense in place.
-
-<!-- end list -->
+        > Pi (pinch into place). ![Attach camera
+        > board.jpg](media/media/image7.jpg)
+    
+    2.  > Attach the TFT touchscreen onto the GPIO pins
+    
+    3.  > Plug into battery pack.
+    
+    4.  > The PI camera should power on if Card B was formatted
+        > properly.
 
 2.  > Test that you can tap screen on the camera to take a photo
 
 3.  > Test that you can remove thumbdrive from Raspberry Pi and plug
     > into computer to retrieve files.
-    
-    6.  > **Let’s add a picture of the final build of the camera.**
 
 **\[BELOW: This was done a bit differently, or done in advance of the
 time with the kids.\]**
@@ -195,7 +127,7 @@ time with the kids.\]**
         > configuration settings through the Terminal. To access the
         > Terminal, open your Pi-Top Dashboard and scroll to the bottom
         > of the Quick Launch icons.![IMG\_1348
-        > (1).JPG](media/image10.jpg)
+        > (1).JPG](media/media/image12.jpg)
     
     2.  > In the Terminal, type “sudo raspi-config” and press Enter.
     
@@ -204,7 +136,7 @@ time with the kids.\]**
         > Enter. When it asks you if you want the camera enabled, use
         > your keyboard arrows to move to “Yes” and press Enter again.
     
-    4.  > ![configuration tool.png](media/image8.png)
+    4.  > ![configuration tool.png](media/media/image14.png)
     
     5.  > You will need to reboot your Pi-Top CEED after this.
 
@@ -225,7 +157,7 @@ time with the kids.\]**
     3.  > NOTE: CTRL + D should stop the live feed if you get stuck in
         > it (this tends to happen, don’t worry).
 
-> ![Creating Camera.Py.png](media/image9.png)
+> ![Creating Camera.Py.png](media/media/image4.png)
 
 3.  > Now that we have taken a 10 second live feed, let’s take a
     > picture\!
@@ -237,7 +169,7 @@ time with the kids.\]**
         > capture the photo, and you need to name your photo and give it
         > a file path on your Desktop. Add this:
 
-> ![Take a photo.png](media/image12.png)
+> ![Take a photo.png](media/media/image5.png)
 
 2.  > The photo that you took was saved to your Desktop. You can take
     > more pictures using this script and changing ‘/image.jpg’ to a new
@@ -260,7 +192,7 @@ time with the kids.\]**
     2.  > The “filename” is where your photos will be stored. So we will
         > modify this in the next step.
     
-    3.  > ![FullSizeRender.jpg](media/image4.jpg)
+    3.  > ![FullSizeRender.jpg](media/media/image10.jpg)
 
 5.  > Now that we can generate a new file name each time we take a
     > picture, we are going to have a lot of pictures. So let’s create a
