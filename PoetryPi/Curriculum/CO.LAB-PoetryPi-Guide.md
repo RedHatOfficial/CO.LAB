@@ -64,102 +64,132 @@ our student teams will work together to create installations that tell
 the story of their overall experience. They’ll then share, critique, and
 refine — in preparation to bring their project to the public.
 
-**DAY ONE: LEARN **
+**DAY ONE: LEARN (Coding Activity)**
 
-Set up the Pi-Top CEED
+1.  > **Setup the Pi-Top CEED**
 
-These instructions assume you have your micro SD card inside of your
-Raspberry Pi and that it is installed with the Pi-Top OS.
+<!-- end list -->
 
 1.  > First you need to attach the camera board to the Raspberry Pi. We
     > need to do this first because the Raspberry Pi will sit inside of
     > the CEED monitor so you will not be able to move the Pi around
     > when your monitor is on.![Attach camera
-    > board.jpg](media/image9.jpg)
-
-2.  > Follow the instructions inside the Pi-Top box to set up the
-    > monitor, inserting the Raspberry Pi within it.
+    > board.jpg](./media/image7.jpg)
     
-    1.  > Attach a keyboard and a mouse to the USB ports on the side of
-        > the Raspberry Pi. These should be accessible from the side of
-        > the Pi.
-
-3.  > Once you plug the Pi-Top CEED into the wall, press the power
-    > button on the left side for 2-3 seconds to power on. A “Get
-    > Started” screen will appear.
+    1.  > The port is marked CAMERA, and it is beside the HDMI port. It
+        > will have a small plastic covering on it. Peel off this
+        > covering.
     
-    2.  > Follow the on-screen instructions, connecting to WiFi when it
-        > prompts you to do so.
-
-**\[Here: Kids learned about using the Terminal and writing basic
-commands through the command line, and explored the games and activities
-on their CEED.\]**
-
-Assemble Camera
-
-1.  > Assemble the camera using Card B:
+    2.  > You open the camera slot by lifting from the two short edges.
+        > You will feel the black plastic piece come up.
     
-    1.  > Remove the little piece of green protective film covering the
-        > camera ribbon slot. Attach the camera board to the Raspberry
-        > Pi (pinch into place). ![Attach camera
-        > board.jpg](media/image7.jpg)
+    3.  > Insert the camera cable with the blue tab facing the right
+        > side of the CEED (toward the ethernet port).
     
-    2.  > Attach the TFT touchscreen onto the GPIO pins
-    
-    3.  > Plug into battery pack.
-    
-    4.  > The PI camera should power on if Card B was formatted
-        > properly.
+    4.  > Press the black plastic on the camera port back down until you
+        > feel it snap tight.
 
-2.  > Test that you can tap screen on the camera to take a photo
+2.  > Remove the black plastic panel from the bottom of the Pi Top CEED,
+    > by sliding it to the side. This is where we will put the Raspberry
+    > Pi.
 
-3.  > Test that you can remove thumbdrive from Raspberry Pi and plug
-    > into computer to retrieve files.
+3.  > Insert the (preformatted) Pi Top CEED SD card into the Raspberry
+    > Pi. This SD card should be found in the CEED box. The SD card slot
+    > is located on the bottom of the Raspberry Pi.
 
-**\[BELOW: This was done a bit differently, or done in advance of the
-time with the kids.\]**
+4.  > Attach the 4 magnets (found inside the CEED box) in the mounting
+    > holes on the Raspberry Pi, then attach to the silver bars inside
+    > the CEED. This keeps the Pi attached inside the CEED.
 
-**Enable Pi Camera**
+5.  > Attach the long black bar cable with the red wire towards the SD
+    > card side.
 
-1.  > Next we need to enable Pi camera and try it out\!
-    
-    1.  > To enable the camera on the Pi-Top OS, we need to adjust the
-        > configuration settings through the Terminal. To access the
-        > Terminal, open your Pi-Top Dashboard and scroll to the bottom
-        > of the Quick Launch icons.![IMG\_1348
-        > (1).JPG](media/image12.jpg)
-    
-    2.  > In the Terminal, type “sudo raspi-config” and press Enter.
-    
-    3.  > The Raspberry Pi configuration tool will open. Use the arrows
-        > on your keyboard to move down to “Enable Camera” and press
-        > Enter. When it asks you if you want the camera enabled, use
-        > your keyboard arrows to move to “Yes” and press Enter again.
-    
-    4.  > ![configuration tool.png](media/image14.png)
-    
-    5.  > You will need to reboot your Pi-Top CEED after this.
+6.  > Attach the HDMI cable to the bottom HDMI port of the Raspberry Pi.
 
-**Write your Camera script**
+7.  > Attach a keyboard and a mouse to the USB ports on the side of the
+    > Raspberry Pi. These should be accessible from the right side of
+    > the CEED.
 
-1.  > Go to your Pi Top Dashboard and open Python 3. This is where you
-    > will write Python scripts.
-    
-    1.  > Save your new Python file by going File \> Save As “camera.py”
-    
-    2.  > Write the script below to try out your Pi camera and put a
-        > live feed on your monitor for 10 seconds. You need to write it
-        > EXACTLY like it is displayed below. When you’ve written this,
-        > save it (CTRL + S) and then run module (F5). The Python Shell
-        > will open, and then a live feed from your camera should appear
-        > on screen.
-    
-    3.  > NOTE: CTRL + D should stop the live feed if you get stuck in
-        > it (this tends to happen, don’t worry).
+8.  > Insert the power cord in the left side of the CEED.
 
-> ![Creating Camera.Py.png](media/image4.png)
+9.  > Leave the black sliding front off the CEED.
 
-3.  > Now that we have taken a 10 second live feed, let’s take a
+10. > Once students plug the Pi-Top CEED into an outlet, press the power
+    > button on the left side for 2-3 seconds to power on. A colorful
+    > square will appear, followed by the boot-up text. A “Get Started”
+    > screen will appear.
+
+11. > Follow the on-screen instructions, connecting to WiFi when it
+    > prompts you to do so (these are UK defaults, so we’ll need to
+    > change them).
+
+**2. Enable Camera on CEED **
+
+1.  > When you start the CEED, you will see an interface that looks like
+    > this:  
+    > ![pi-top1.jpg](./media/image10.jpg)  
+    >   
+    > Scroll down in the “Quick Launch” section in the middle, and
+    > you’ll see a button named “Python 3.” That’s what we’re going to
+    > be using later, so click it now.
+
+2.  > Once you click it, you’ll see the Python window on a more
+    > familiar-looking desktop. Before you can start writing code for
+    > the camera, you’ll need to enable the camera. Click the terminal
+    > icon in the lower left corner, then Preferences \> Raspberry Pi
+    > Configuration:  
+    > ![2017-10-10-142300\_1366x768\_scrot.png](./media/image6.png)
+
+3.  > In the Raspberry Pi Configuration window, click the Interfaces
+    > tab. Select Enable by Camera, and click OK.  
+    > ![2017-10-10-142342\_1366x768\_scrot.png](./media/image8.png)
+
+4.  > You will be prompted to reboot the CEED. Click OK. Once the system
+    > reboots, you will be ready to try some Python code for the camera.
+
+**3. Learn to use the Pi Camera on the CEED (30 min): **
+
+> You can use the following instructions to:
+
+  - > Write a basic script for taking a photo with a 5-second delay
+
+  - > Try out a live feed
+
+> **  
+> **We will go through these steps as a group, but if you have a student
+> going more quickly or slowly, feel free to help them move along at
+> their own pace using these instructions.
+> 
+> First, click the same Python 3 button you found before we enabled the
+> camera. Click it to open the Python 3 IDLE.
+> 
+> *Write a basic script for taking a photo*
+
+1.  > Click File \> New File. Save this file as camera.py.
+
+2.  > Write the script below to try out your Pi camera and put a live
+    > feed on your monitor for 10 seconds. You will see some of the text
+    > change colors as you’re typing. That’s OK. Be sure to type EXACTLY
+    > what you see below.
+
+> from picamera import PiCamera  
+> from time import sleep  
+> camera = PiCamera()  
+> camera.start\_preview()  
+> sleep(10)  
+> camera.stop\_preview()
+
+3.  > When you’ve written this, save your file by pressing Ctrl + S.
+
+4.  > Press F5 to run your script. You should see the camera preview for
+    > 10 seconds and then close. You can move the camera around during
+    > this time. NOTE: CTRL + D should stop the live feed if you get
+    > stuck in it (this tends to happen, don’t worry).  
+    >   
+    > If you do not see the camera preview, there is an error in your
+    > script. Be sure that you typed it exactly as you see above.
+
+5.  > Now that we have taken a 10 second live feed, let’s take a
     > picture\!
     
     1.  > To take a real picture, you need to amend your code. You can
@@ -167,69 +197,57 @@ time with the kids.\]**
         > seconds: this means the camera will wait for 5 seconds before
         > taking the photo. You also need to add a new line of code to
         > capture the photo, and you need to name your photo and give it
-        > a file path on your Desktop. Add this:
+        > a file path on your Desktop. Add this line after sleep(5):  
+        >   
+        > camera.capture('/home/pi/Desktop/image.jpg')
 
-> ![Take a photo.png](media/image5.png)
+6.  > Ctrl + S to save, and press F5 to run it again. You should see the
+    > camera preview for 5 seconds before it takes a photo.
 
-2.  > The photo that you took was saved to your Desktop. You can take
-    > more pictures using this script and changing ‘/image.jpg’ to a new
-    > file name and running the script again.
+7.  > Your photo will be saved to the desktop. You can double-click it
+    > to open it. You can take more pictures using this script and
+    > changing ‘/image.jpg’ to a new file name and running the script
+    > again.
 
-<!-- end list -->
+*Try out a live feed*
 
-4.  > Now we need to adjust the script so that it will name each photo
-    > that you take something new, so that you do not have to rename
-    > every new file in the camera.py script every time you want to take
-    > a photo. To do this, we will create a “random” function using
-    > Python’s random library that will name each photo a random string
-    > of letters. In the script, we tell each file name to be 4 letters
-    > long (look at the script photo - can you figure out which part
-    > does that?\!).
-    
-    1.  > Create a new Python file or rework your existing camera.py
-        > file and make it look just like the script below.
-    
-    2.  > The “filename” is where your photos will be stored. So we will
-        > modify this in the next step.
-    
-    3.  > ![FullSizeRender.jpg](media/image10.jpg)
+1.  > The Pi camera also does video. To start, delete the last three
+    > lines of your file. It should now end with
+    > camera.start\_preview().
 
-5.  > Now that we can generate a new file name each time we take a
-    > picture, we are going to have a lot of pictures. So let’s create a
-    > folder where all our photos can live\!
-    
-    4.  > Create a new folder by going to the folders icon in the top
-        > left of the menu bar to open your files. Then go File \>
-        > Create New and name your folder “Images”
-    
-    5.  > Now let’s adjust our script to assign the new folder as the
-        > destination for your photos. To do this, go to the filename
-        > variable and replace the current destination (desktop) with
-        > your folder’s name. In this case it should be:
-        > filename=’/images’
-    
-    6.  > Test it out to make sure your images are going into your
-        > folder\! Then celebrate because you’re being so organized.
+2.  > Add these three lines to replace them:  
+    > camera.start\_recording('/home/pi/video.h264')  
+    > sleep(10)  
+    > camera.stop\_recording()  
+    > camera.stop\_preview()
+
+3.  > Ctrl + S to save, and press F5 to run the code. It will record ten
+    > seconds of video and then close. If it doesn’t, double check your
+    > typing.
+
+4.  > We’ll use the command line to play the video. Click the Terminal
+    > button in the taskbar:  
+    > ![2017-10-10-142342\_1366x768\_scrot (1).png](./media/image9.png)
+
+5.  > Type omxplayer video.h264 in the terminal and press Enter. The
+    > video should open and play. It may be at a faster speed than you
+    > expected.
 
 **Summary**
 
 At this point we have:
 
-  - > Set up the Pi Camera
+  - > Setup the Pi Camera
 
   - > Tried out a live feed
 
   - > Taken photos with a 5 second delay
 
-  - > Written a script to rename every photo something random
+  - > Take a short video
 
-  - > Created a folder and told our camera to save all pictures there
-
-NOTE: We should decide if there are other things we want to introduce
-the students to with the Pi Camera. The kids can extend the code to do
-things like:
-
-  - > Take video
+> NOTE: You can decide if there are other things you want to introduce
+> the students to with the Pi Camera. The kids can extend the code to do
+> things like:
 
   - > Add cool effects to the photos
 
@@ -237,27 +255,39 @@ things like:
 
   - > Take multiple photos in a row
 
-**Installing the PiTFT touchscreen**
+> *Instructions based on project at:
+> [<span class="underline">https://projects.raspberrypi.org/en/projects/getting-started-with-picamera</span>](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera)*
 
-We are going to install a touchscreen that connects to our Raspberry Pi
-so that we can use our camera when we are not connected to a monitor.
-The touchscreen will allow us to see our desktop and interact with the
-Raspberry Pi through a familiar graphical interface.
+**Assemble Portable Pi Camera**
 
-1.  > We need to download and install Kernel, which is the software that
-    > we need for our touch screen for the Raspberry Pi.
+Students obtain their Raspberry Pi (3) and touchscreen, battery, case,
+SD card, etc., they assemble and turn them on for the first time. (NOTE:
+We provided a second Raspberry Pi, but reused the Camera. If you use two
+camera modules per student, you can skip step A.)
 
-2.  > This
-    > [<span class="underline">documentation</span>](https://learn.adafruit.com/adafruit-pitft-28-inch-resistive-touchscreen-display-raspberry-pi/easy-install)
-    > tells you everything you need to do this in great detail.
+1.  > Carefully remove the camera cable from the Raspberry Pi in the
+    > CEED. Lift the black plastic piece on the camera port and remove
+    > the cable.
 
-> NOTE: This takes a really long time (at least 30 minutes to install)
-> and has some tricky steps of working within the Terminal . So we might
-> need to install the software before working with the students, but
-> involve them in the step of plugging in the touch screen.
+2.  > Insert the camera into the new Raspberry Pi just as you placed it
+    > in the CEED. Remember, the blue strip faces the ethernet and USB
+    > ports.
 
-3.  > Attach the touchscreen to the Pi (pictures and instructions
-    > coming)
+3.  > Attach the TFT touchscreen onto the GPIO pins. Pay close attention
+    > so that you do not bend the pins\!
 
-Here is the [<span class="underline">full documentation on using Pi
-Camera</span>](https://picamera.readthedocs.io/en/release-1.13/index.html).
+4.  > Insert the SD card with the Camera software image
+
+5.  > Insert the Pi into the plastic case; leave the lid off.
+
+6.  > Plug into battery pack into both ends (USB into the power pack,
+    > microUSB into the Pi). Press the power button on the battery pack.
+    > Rubber band the battery pack around the camera case.
+
+7.  > The Pi camera should power on.
+
+8.  > Tape the camera strip to the Pi case to hold the lens in place.
+
+9.  > Insert a USB thumb drive as a way to store the photos.
+
+10. > Test that you can tap the screen on the camera to take a photo.
