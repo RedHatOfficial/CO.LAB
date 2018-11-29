@@ -40,7 +40,7 @@ void loop() {
   Serial.print(" level: ");
   Serial.println(currentLightLevel);
 
-  if(abs(currentLightLevel - startupLightLevel) > 20)
+  if(abs(currentLightLevel - startupLightLevel) > 5)
   {
     Serial.println("Something has changed!");
     //Do things here
