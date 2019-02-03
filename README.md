@@ -1,17 +1,38 @@
-# CO.LAB
+Role Name
+=========
 
-CO.LAB is Red Hat and open source in action. 
-CO.LAB teaches students how to work together to solve problems, share new ideas, and to create collaboratively out of a shared experience.
+A brief description of the role goes here.
 
-The goal of CO.LAB is to introduce young people to the principles of open source -- and to a world of technology and collaboration that they may not have otherwise considered. Collaboration is a powerful driver of innovation and discovery, and open source methodology is a key part of STEAM (science, technology, engineering, arts, and mathematics) education. Empower your young people with collaborative skills that will help them succeed in their pursuit of science, technology, engineering and math careers.
+Requirements
+------------
 
-For more information, see:
-https://www.redhat.com/en/open-source-stories/colab
+Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
 
-This repository is intended to be a home for the curriculum, materials, and source code that make up our CO.LAB experiences. We invite you to collaborate with us to improve, evolve, and grow this initiative.
+Role Variables
+--------------
 
-* **Poetry on Pi (PoetryPi/)**  
-  This curriculum provides an introduction to electronics, powered by Raspberry Pi and Python. Students create their own touch-screen powered digital cameras, then work together as a group to take and curate pictures that are inspired by a poem. The focus is on collaboration and appreciation for the value of technology in solving problems and creating art.
+A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
 
-* **Breaking the Code (BreakingTheCode/)**   
-  This curriculum uses paper circuits and microcontrollers to create an interactive "code book". Students get a basic introduction to circuit design, and collaborate to complete all of the pages for a physical book, with 3d printed covers. The focus is on collaboration, empowerment, and problem solving.
+Dependencies
+------------
+
+A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+
+Example Playbook
+----------------
+
+Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+
+    - hosts: servers
+      roles:
+         - { role: username.rolename, x: 42 }
+
+License
+-------
+
+BSD
+
+Author Information
+------------------
+
+An optional section for the role authors to include contact information, or a website (HTML is not allowed).
