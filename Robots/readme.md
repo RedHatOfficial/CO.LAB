@@ -3,7 +3,8 @@
 ## Activity Instructions 
 * [Building the Bot and Getting it Running](https://github.com/RedHatOfficial/CO.LAB/blob/master/Robots/Robot%20Activity%201%20-%20Building%20the%20Bot%20%26%20Getting%20it%20Running.pdf)
 * We'll be creating more activities in the coming months, so watch this space.
-![picture of Co.Lab Robot Kit](/images/16424-Red_Hat_Robotics_Kit-02_Updated.jpg)
+
+![picture of Co.Lab Robot Kit](images/16424-Red_Hat_Robotics_Kit-02_Updated.jpg)
 ## More about the Red Hat Co.Lab Robot Kit
 Red Hat Co.Lab has partnered with SparkFun to create an [exciting robot kit](https://www.sparkfun.com/products/16424) that contains everything you need to build your own open source robot that can scroll your name in lights, run a maze and follow a line, and much more. The robot’s brain is a pocket-sized computer called a micro:bit that is packed with functionality, including 25 LEDs, an accelerometer, and a built-in compass. Your robot also comes with three sensors that can measure the amount of light being reflected from the ground, giving your robot a way to “see.”
 
