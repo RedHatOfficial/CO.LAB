@@ -1,8 +1,10 @@
 # Build your own robot and become a part of the future of robotics.
 
 ## Activity Instructions 
-* [Building the Bot and Getting it Running](https://github.com/RedHatOfficial/CO.LAB/blob/master/Robots/Robot%20Activity%201%20-%20Building%20the%20Bot%20%26%20Getting%20it%20Running.pdf)
-* We'll be creating more activities in the coming months, so watch this space.
+* [Building the Bot and Getting it Running](https://github.com/RedHatOfficial/CO.LAB/blob/master/Robots/Robot%20Activity%201%20-%20Building%20the%20Bot%20%26%20Getting%20it%20Running.pdf) 
+* **New!** [A video to help you with your build](https://youtu.be/-Va7g1q24co)
+
+--> We'll be creating more activities in the coming months, so **watch this space**.
 
 ![picture of Co.Lab Robot Kit](images/16424-Red_Hat_Robotics_Kit-02_Updated.jpg)
 ## More about the Red Hat Co.Lab Robot Kit
